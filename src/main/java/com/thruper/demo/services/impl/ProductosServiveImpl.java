@@ -16,8 +16,7 @@ public class ProductosServiveImpl implements ProductoService {
     private ProductosRepo productosRepo;
 
     @Override
-    public Productos guardarProduct(ProductDTO producto) {
-
+    public Productos guardarProduct(Productos producto) {
         Productos productToSave = new Productos();
         productToSave.setCodigo(producto.getCodigo());
         productToSave.setDescripcion(producto.getDescripcion());
